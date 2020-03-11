@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eecfc14ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cultura - Muses</title>
+</head>
+
+<body>
+    <header>
+        <div id="hamburger_items">
+            <img id="hamburger_menu" src="images/hamburger.png" onclick="showMenu()" />
+            <div id="logo">
+                <h2>CULTURA</h2>
+            </div>
+            <a href="login.html"><img id="hamburger_login" src="images/login.png" /></a>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="museos.html">Museos</a>
+            <a href="eventos.html">Eventos</a>
+            <a id="login" href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <main id="listado">
+        <h1 class="catalog">Museos</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museomemoria.jpg" alt="Avatar">
+                            <h4>Museo de la Memoria y los Derechos Humanos</h4>
+                            <p>Matucana 501 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo de la Memoria y los Derechos Humanos</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a domingo</p>
+                            <p>10:00 a 18:00 hrs.</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 25979600</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="museoMemoria.html" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museoallende.jpg" alt="Avatar">
+                            <h4>Museo de la Solidaridad Salvador Allende</h4>
+                            <p>Av. República 475 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo de la Solidaridad Salvador Allende</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a domingo</p>
+                            <p>Abril a noviembre: 10:00 a 18:00 hrs.</p>
+                            <p>Diciembre y enero: 11:00 a 19:00 hrs.</p>
+                            <p>Cerrado durante febrero y marzo</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 26898761</p>
+                            <h4>Entrada:</h4>
+                            <p>General: $ 1.000</p>
+                            <p>Estudiantes, adultos mayores y organizaciones sociales: liberada</p>
+                            <p>Domingo: liberada.</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/lachascona.jpg" alt="Avatar">
+                            <h4>Casa Museo La Chascona</h4>
+                            <p>Fernando Márquez de la Plata 0192 - Providencia</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Casa Museo La Chascona</h2>
+                            <h4>Horarios:</h4>
+                            <p>Marzo a diciembre:
+                                Martes a domingo de 10:00 a 18:00 hrs.
+                                Enero y febrero: martes a domingo de 10:00 a 19:00 hrs.
+                                Lunes cerrado.</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 2777 87 41 /
+                                +56 2 2737 87 12</p>
+                            <h4>Entrada:</h4>
+                            <p>General: $7.000. Estudiantes y Chilenos mayores de 60 años: $2.500</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museobenjamin.jpg" alt="Avatar">
+                            <h4>Museo Nacional Benjamín Vicuña M.</h4>
+                            <p>Av. Vicuña Mackenna 94 - Providencia</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Nacional Benjamín Vicuña M.</h2>
+                            <h4>Horarios:</h4>
+                            <p>Lunes a viernes de 09:30 a 17:30 horas.
+                                Sábado de 10:00 a 14:00 horas</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 22229642</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museohistorico.jpg" alt="Avatar">
+                            <h4>Museo Histórico Nacional</h4>
+                            <p>Plaza de Armas 951 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Histórico Nacional</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a domingo de 10:00 a 18:00 horas</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 24117027 / +56 2 24117010</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museonatural.jpg" alt="Avatar">
+                            <h4>Museo Nacional de Historia Natural</h4>
+                            <p>Interior de Parque Quinta Normal - Quinta Normal</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Nacional de Historia Natural</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a sábado desde las 10:00 a 17:30 hrs</p>
+                            <p>Domingos y festivos (salvo lunes) desde las 11:00 a 17:30 hrs</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 26804603</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museobellasartes.jpg" alt="Avatar">
+                            <h4>Museo Nacional de Bellas Artes</h4>
+                            <p>José Miguel de la Barra 650 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Nacional de Bellas Artes</h2>
+                            <h4>Horarios:</h4>
+                            <p>De martes a domingo de 10:00 a 18:45 hrs</p>
+                            <p>Biblioteca: martes a viernes de 10:00 a 17:45 hrs. Acceso gratuito</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 2499 1600</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museoprecolombino.jpg" alt="Avatar">
+                            <h4>Museo Chileno de Arte Precolombino</h4>
+                            <p>Bandera 361 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Chileno de Arte Precolombino</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a domingo de 10:00 a 18:00 hrs</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 29281500</p>
+                            <h4>Entrada:</h4>
+                            <p>Chilenos y extranjeros residentes $1.000</p>
+                            <p>Extranjeros $6.000</p>
+                            <p>Estudiantes chilenos y extranjeros residentes $500</p>
+                            <p>Estudiantes extranjeros $3.000</p>
+                            <p>Entrada liberada para niñas y niños hasta los 10 años.</p>
+                            <p>Entrada liberada primer domingo de cada mes.</p>
+                            <p>Adultos mayores residentes: liberada.</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museodelamerced.jpg" alt="Avatar">
+                            <h4>Museo de La Merced</h4>
+                            <p>Mac Iver 341 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo de La Merced</h2>
+                            <h4>Horarios:</h4>
+                            <p>Lunes a viernes de 10:00 a 18:00 hrs</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 26649189</p>
+                            <h4>Entrada:</h4>
+                            <p>General: $ 1.000</p>
+                            <p>Estudiantes y adultos mayores: 500</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museobancocentral.jpg" alt="Avatar">
+                            <h4>Museo Numismático del Banco Central de Chile</h4>
+                            <p>Agustinas 1180 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo Numismático del Banco Central de Chile</h2>
+                            <h4>Horarios:</h4>
+                            <p>Lunes a viernes de 10:00 a 13:00 hrs.</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 26702000</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museocasacolorada.jpg" alt="Avatar">
+                            <h4>Museo de Santiago Casa Colorada</h4>
+                            <p>Merced 860 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo de Santiago Casa Colorada</h2>
+                            <h4>Horarios:</h4>
+                            <p>Cerrado por restauración</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 23867400</p>
+                            <h4>Entrada:</h4>
+                            <p>Cerrado</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/museobomberos.jpg" alt="Avatar">
+                            <h4>Museo de Bomberos</h4>
+                            <p>Santo Domingo 978 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Museo de Bomberos</h2>
+                            <h4>Horarios:</h4>
+                            <p>Martes a viernes de 10:00 a 13:00 hrs</p>
+                            <p>Sábado y domingo de 10:00 a 14:00 hrs</p>
+                            <h4>Teléfono:</h4>
+                            <p>56 2 23061562</p>
+                            <h4>Entrada:</h4>
+                            <p>General: $ 1.000</p>
+                            <p>Bomberos, estudiantes y tercera edad: $500</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Cultura</h3>
+        <div id="redes">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </footer>
+
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        let isHamburgerMenuShowing;
+        if (vw <= 550) { isHamburgerMenuShowing = true; }
+        else { isHamburgerMenuShowing = false; }
+
+        window.addEventListener('resize', function () {
+            vpw = window.innerWidth || document.documentElement.clientWidth;
+            if (vpw > 550) {
+                isHamburgerMenuShowing = false;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "flex";
+            }
+            else {
+                isHamburgerMenuShowing = true;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "none";
+            }
+        }, false);
+
+        function showMenu() {
+            isHamburgerMenuShowing = !isHamburgerMenuShowing;
+            var menu = document.querySelector('#menu');
+            menu.style.display = isHamburgerMenuShowing ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

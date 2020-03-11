@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eecfc14ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cultura - Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="hamburger_items">
+            <img id="hamburger_menu" src="images/hamburger.png" onclick="showMenu()" />
+            <div id="logo">
+                <h2>CULTURA</h2>
+            </div>
+            <a href="login.html"><img id="hamburger_login" src="images/login.png" /></a>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="museos.html">Museos</a>
+            <a href="eventos.html">Eventos</a>
+            <a id="login" href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <main id="index">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="box1 col-xs-12 col-sm-6">
+                    <div class="home">
+                        <h1>HOME</h1>
+                        <br>
+                        <h2>Museos</h2>
+                        <p>Ingresa a "Museos" y encuentra toda la información de tus museos preferidos: Dirección,
+                            Horarios, Tarifas y más.</p>
+                        <br>
+                        <h2>Eventos</h2>
+                        <p>Ingresa a "Eventos" y entérate toda la información de tus eventos favoritos: Direccion,
+                            Fecha, Horarios, Tarifas y más.</p>
+                    </div>
+                </div>
+                <div class="box2 col-xs-12 col-sm-6">
+                    <form action="">
+                        <h1>¡Participa!</h1><br>
+                        <label for="email">Email</label><br>
+                        <hr>
+                        <input type="email" class="campo" name="email" required="required" placeholder="Email">
+                        <hr>
+                        <label for="password">Contraseña</label><br>
+                        <hr>
+                        <input type="text" class="campo" name="password" required="required"
+                            placeholder="Contraseña"><br>
+                        <hr>
+                        <label for="password">Confirmar Contraseña</label><br>
+                        <hr>
+                        <input type="text" class="campo" name="password" required="required"
+                            placeholder="Confirmar Contraseña"><br>
+                        <hr>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Cultura</h3>
+        <div id="redes">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </footer>
+
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        let isHamburgerMenuShowing;
+        if (vw <= 550) { isHamburgerMenuShowing = true; }
+        else { isHamburgerMenuShowing = false; }
+
+        window.addEventListener('resize', function () {
+            vpw = window.innerWidth || document.documentElement.clientWidth;
+            if (vpw > 550) {
+                isHamburgerMenuShowing = false;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "flex";
+            }
+            else {
+                isHamburgerMenuShowing = true;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "none";
+            }
+        }, false);
+
+        function showMenu() {
+            isHamburgerMenuShowing = !isHamburgerMenuShowing;
+            var menu = document.querySelector('#menu');
+            menu.style.display = isHamburgerMenuShowing ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

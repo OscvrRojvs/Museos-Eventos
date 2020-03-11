@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eecfc14ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cultura - Eventos</title>
+</head>
+
+<body>
+    <header>
+        <div id="hamburger_items">
+            <img id="hamburger_menu" src="images/hamburger.png" onclick="showMenu()" />
+            <div id="logo">
+                <h2>CULTURA</h2>
+            </div>
+            <a href="login.html"><img id="hamburger_login" src="images/login.png" /></a>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="museos.html">Museos</a>
+            <a href="eventos.html">Eventos</a>
+            <a id="login" href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <main id="listado">
+
+        <h1 class="catalog">Eventos</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Artesania Chilena.jpg" alt="Avatar">
+                            <h4>Artesanías de Chile</h4>
+                            <p>Plaza de la Ciudadanía - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Artesanías de Chile</h2>
+                            <h4>Horarios:</h4>
+                            <p>Lunes a domingo: 12:00 a 13:00 hrs o 16:00 a 17:00 hrs.</p>
+                            <p>10:00 a 18:00 hrs.</p>
+                            <h4>Teléfono:</h4>
+                            <p>-</p>
+                            <h4>Entrada:</h4>
+                            <p>La inscripción se hace en sala por orden de llegada al momento del taller. Son máximo 20
+                                cupos por horario</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/proyectono.jpg" alt="Avatar">
+                            <h4>Proyecto NO</h4>
+                            <p>Merced 349 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Proyecto NO</h2>
+                            <h4>Horarios:</h4>
+                            <p>28, 29, 30 y 31 de Enero a las 19 hrs.</p>
+                            <h4>Teléfono:</h4>
+                            <p>-</p>
+                            <h4>Entrada:</h4>
+                            <p>General:$8.000</p>
+                            <p>Estudiantes y adultos mayores: $5.000</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Desastre domestico.jpg" alt="Avatar">
+                            <h4>El Desastre Doméstico</h4>
+                            <p>Calle Dieciocho 438 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>El Desastre Doméstico</h2>
+                            <h4>Horarios:</h4>
+                            <p>Apartir del dia 18 lunes a viernes de 9:30 a 13:30 y de 14:30 a 17:00 hrs</p>
+                            <p>Los días sábados el horario es de 9:30 a 13:30 hrs</p>
+                            <h4>Teléfono:</h4>
+                            <p>-</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/sound exercises.jpg" alt="Avatar">
+                            <h4>Sound Exercises</h4>
+                            <p>José Victorino Lastarria 307 - Providencia</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 56</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Sound Exercises</h2>
+                            <h4>Horarios:</h4>
+                            <p>16 de Enero a 8 Marzo 2020</p>
+                            <p>Martes a Domingo de 11:00 a 19:00 horas</p>
+                            <h4>Teléfono:</h4>
+                            <p>-</p>
+                            <h4>Entrada:</h4>
+                            <p>Gratuita para estudiantes, menores de 8 años y mayores de 60 años</p>
+                            <p>martes a sábado: $1.000 adultos</p>
+                            <p>Domingos: gratuita para todo público</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/La memoria la historia y el olvido.jpg" alt="Avatar">
+                            <h4>La memoria, la historia, el olvido</h4>
+                            <p>José Victorino Lastarria 307 - Providencia</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>La memoria, la historia, el olvido</h2>
+                            <h4>Horarios:</h4>
+                            <p>16 de Enero a 5 de Abril</p>
+                            <p>martes a domingo de 11:00 a 19:00 horas</p>
+                            <h4>Teléfono:</h4>
+                            <p>-</p>
+                            <h4>Entrada:</h4>
+                            <p>Martes a sábado: $1.000 adultos</p>
+                            <p>Gratuita para estudiantes, menores de 8 años y mayores de 60 años</p>
+                            <p>Liberada todos los domingos</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/cine arte normandie.jpg" alt="Avatar">
+                            <h4>Cine Arte Normandie</h4>
+                            <p>Tarapacá 1181 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Cine Arte Normandie</h2>
+                            <h4>Horarios:</h4>
+                            <p>Lunes a Domingos</p>
+                            <p>Apartir de las 15:00 a 20:00 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>(56-2) 2 697 2979</p>
+                            <h4>Entrada:</h4>
+                            <p>Entrada General $4.500</p>
+                            <p>Tarjeta Amigos del Cine $2.000</p>
+                            <p>Estudiantes y Tercera Edad $3.000</p>
+                            <p>Miércoles $3.500</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/fragilidad y excesos.jpg" alt="Avatar">
+                            <h4>Brantmayer: Fragilidad y Excesos</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Brantmayer: Fragilidad y Excesos</h2>
+                            <h4>Horarios:</h4>
+                            <p>4 Enero al 29 Marzo</p>
+                            <p>Ma a Vi - 10 a 18 horas.</p>
+                            <p>Sábado y Domingo - 11 a 20 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5500</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/nadie lee fuego.jpg" alt="Avatar">
+                            <h4>Nadie lee fuego mientras todo se está quemando</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Nadie lee fuego mientras todo se está quemando</h2>
+                            <h4>Horarios:</h4>
+                            <p>31 Enero y 01 Febrero</p>
+                            <p>Viernes – 15.30 horas.</p>
+                            <p>Sábado – 17.30 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5501</p>
+                            <h4>Entrada:</h4>
+                            <p>$3.000 Entrada general.</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/qvema.jpg" alt="Avatar">
+                            <h4>Qvema, quiero ver el mundo arder</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Quema, quiero ver el mundo arder</h2>
+                            <h4>Horarios:</h4>
+                            <p>31 Enero y 01 Febrero</p>
+                            <p>Viernes y Sábado – 16.30 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5502</p>
+                            <h4>Entrada:</h4>
+                            <p>$3.000 Entrada general</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/peces caminando.jpg" alt="Avatar">
+                            <h4>Peces caminando! + Cabildo</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Peces caminando! + Cabildo</h2>
+                            <h4>Horarios:</h4>
+                            <p>01 Febrero</p>
+                            <p>Sábado – 15 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5503</p>
+                            <h4>Entrada:</h4>
+                            <p>Liberada</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/la ultima danza.jpg" alt="Avatar">
+                            <h4>Bío Bío, la última danza</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Bío Bío, la última danza</h2>
+                            <h4>Horarios:</h4>
+                            <p>31 Enero y 01 Febrero</p>
+                            <p>Viernes y Sábado – 16 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5504</p>
+                            <h4>Entrada:</h4>
+                            <p>$3.000 Entrada general.</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/gabriela mistral.jpg" alt="Avatar">
+                            <h4>Mistral, Gabriela (1945) Santiago Off</h4>
+                            <p>Av. Libertador Bernardo O'Higgins 227 - Santiago Centro</p>
+                            <div class="row rating bottom-xs">
+                                <i class="fas fa-thumbs-up fa-lg"><small> 43</small></i>
+                                <i class="fas fa-thumbs-down fa-lg" style="color: rgb(235, 60, 89);"><small>
+                                        14</small></i>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Mistral, Gabriela (1945) Santiago Off</h2>
+                            <h4>Horarios:</h4>
+                            <p>01 y 02 Febrero</p>
+                            <p>Sábado 15 y 18 horas.</p>
+                            <p>Domingo 12.30 y 16 horas.</p>
+                            <h4>Teléfono:</h4>
+                            <p>[+562] 2566 5505</p>
+                            <h4>Entrada:</h4>
+                            <p>$3.000 Entrada general.</p><br>
+                            <a href="http://google.com" class="button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Cultura</h3>
+        <div id="redes">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </footer>
+
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        let isHamburgerMenuShowing;
+        if (vw <= 550) { isHamburgerMenuShowing = true; }
+        else { isHamburgerMenuShowing = false; }
+
+        window.addEventListener('resize', function () {
+            vpw = window.innerWidth || document.documentElement.clientWidth;
+            if (vpw > 550) {
+                isHamburgerMenuShowing = false;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "flex";
+            }
+            else {
+                isHamburgerMenuShowing = true;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "none";
+            }
+        }, false);
+
+        function showMenu() {
+            isHamburgerMenuShowing = !isHamburgerMenuShowing;
+            var menu = document.querySelector('#menu');
+            menu.style.display = isHamburgerMenuShowing ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

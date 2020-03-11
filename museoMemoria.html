@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eecfc14ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cultura - Museo de la memoria</title>
+</head>
+
+<body>
+    <header>
+        <div id="hamburger_items">
+            <img id="hamburger_menu" src="images/hamburger.png" onclick="showMenu()" />
+            <div id="logo">
+                <h2>CULTURA</h2>
+            </div>
+            <a href="login.html"><img id="hamburger_login" src="images/login.png" /></a>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="museos.html">Museos</a>
+            <a href="eventos.html">Eventos</a>
+            <a id="login" href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <main id="museo">
+        <div id="header">
+            <h1>Museo de la Memoria y los Derechos Humanos</h1>
+        </div>
+        <div id="info">
+            <div id="reseña">
+                <h2>Reseña</h2>
+                <p>
+                    Fue inaugurado en 2010, como un espacio destinado a recordar las violaciones de los Derechos Humanos
+                    cometidas durante la dictadura militar y, de esta manera, dignificar a las víctimas y sus familias.
+                    El moderno edificio alberga una gran muestra de testimonios visuales y documentales que invitan a la
+                    reflexión, comprensión y educación sobre los Derechos Humanos.
+                    Las visitas son gratuitas y están orientadas a todo público. Cuenta con una plaza de 8.000 metros
+                    cuadrados y una biblioteca digital. En sus dependencias también se llevan a cabo exposiciones
+                    temporales, talleres o cursos que ayudan a la profundización del conocimiento sobre los Derechos
+                    Humanos.
+                </p>
+                <div id="mapa"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Matucana%20501%2C%20Quinta%20Normal+(Museo%20de%20la%20memoria)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
+            </div>
+            <div>
+                <h2>Dirección</h2>
+                <p>
+                    Matucana #501, Santiago Centro
+                </p>
+                <h2>Horarios</h2>
+                <p>
+                    Martes a domingo de 10:00 a 18:00 hrs.
+                </p>
+                <h2>Entrada</h2>
+                <p>
+                    Liberada
+                </p>
+                <h2>
+                    Contacto
+                </h2>
+                <p>
+                        <i class="fas fa-mobile-alt"></i> +56 2 25979600
+                </p>
+                <br>
+                <p>
+                        <i class="fas fa-globe"></i> http://www.museodelamemoria.cl/
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Cultura</h3>
+        <div id="redes">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </footer>
+
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        let isHamburgerMenuShowing;
+        if (vw <= 550) { isHamburgerMenuShowing = true; }
+        else { isHamburgerMenuShowing = false; }
+
+        window.addEventListener('resize', function () {
+            vpw = window.innerWidth || document.documentElement.clientWidth;
+            if (vpw > 550) {
+                isHamburgerMenuShowing = false;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "flex";
+            }
+            else {
+                isHamburgerMenuShowing = true;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "none";
+            }
+        }, false);
+
+        function showMenu() {
+            isHamburgerMenuShowing = !isHamburgerMenuShowing;
+            var menu = document.querySelector('#menu');
+            menu.style.display = isHamburgerMenuShowing ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

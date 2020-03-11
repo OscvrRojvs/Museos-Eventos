@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/4eecfc14ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cultura - Login</title>
+</head>
+
+<body>
+    <header>
+        <div id="hamburger_items">
+            <img id="hamburger_menu" src="images/hamburger.png"
+                onclick="showMenu()" />
+            <div id="logo">
+                <h2>CULTURA</h2>
+            </div>
+            <a href="login.html"><a href="login.html"><img id="hamburger_login" src="images/login.png" /></a></a>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="museos.html">Museos</a>
+            <a href="eventos.html">Eventos</a>
+            <a id="login" href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <main id="login">
+      <div class="row center-xs center-xs">
+        <!--Centrar Logotipo en forma vertical-->
+        <div class="Formulario col-xs-12 col-sm-6 center-xs start-xs">
+          <img src="images/user1.png" alt="usuario">
+          <form method="post" action="/" id="form" class="validate">
+  
+            <div class="form-field">
+              <label for="email-input">Email:</label>
+              <input type="email" name="email-input" maxlength="50" id="email-input" placeholder="example@domain.com"
+                required />
+            </div>
+            <div class="form-field">
+              <label for="password-input">Contraseña:</label>
+              <input type="password" name="password-input" id="password-input" required />
+            </div>
+            <div class="form-field">
+              <label for=""></label>
+              <input class="boton" type="submit" value="Entrar" />
+            </div>
+          </form>
+  
+        </div>
+      </div>
+    </main>
+    <footer>
+        <h3>Cultura</h3>
+        <div id="redes">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </footer>
+
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        let isHamburgerMenuShowing;
+        if (vw <= 550) { isHamburgerMenuShowing = true; }
+        else { isHamburgerMenuShowing = false; }
+
+        window.addEventListener('resize', function () {
+            vpw = window.innerWidth || document.documentElement.clientWidth;
+            if (vpw > 550) {
+                isHamburgerMenuShowing = false;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "flex";
+            }
+            else {
+                isHamburgerMenuShowing = true;
+                var menu = document.querySelector('#menu');
+                menu.style.display = "none";
+            }
+        }, false);
+
+        function showMenu() {
+            isHamburgerMenuShowing = !isHamburgerMenuShowing;
+            var menu = document.querySelector('#menu');
+            menu.style.display = isHamburgerMenuShowing ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

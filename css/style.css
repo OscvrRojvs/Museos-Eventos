@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+/* Atributos generales, header y footer */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color : white;
+    font-family: 'Bebas Neue', 'Helvetica';
+}
+
+header a {
+    color : white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', 'Helvetica';
+}
+
+header {
+    background: #24201F;
+    display: flex;
+}
+header #logo:hover {
+    color: goldenrod;
+    transition: color 0.1s ease-out;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Bebas Neue', 'Helvetica';
+}   
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.menu a {
+    padding: 20px 20px;
+    display: inline-block;
+    margin : 0 10px;
+}
+
+.menu a#login {
+    margin-left: auto;
+}
+
+#hamburger_menu {
+    display: none;
+}
+
+.menu a:hover {
+    background-color: #656262;
+}
+
+#hamburger_login {
+    display : none;
+}
+
+main #header {
+    height: 300px;
+    width: 100%;
+    background: white url("https://www.radiozero.cl/static/2017/09/disenoarquitectura.cl-Museo-de-la-Memoria-y-los-Derechos-Humanos-Estudio-Am%C3%A9rica-fotoexpo04-1200x500.jpg") no-repeat top right;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+main #header h1 {
+    padding: 20px;
+    color: white;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    font-family: 'Bebas Neue', 'Helvetica';   
+}
+
+main #info {
+    padding: 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main #info div#reseña {
+    width: 40%;
+}
+
+main #info div#reseña #mapa {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+main #info div {
+    padding: 20px;
+}
+
+main #info h2 {
+    padding: 20px 0;
+}
+
+main #info p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #24201F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', 'Helvetica';
+}
+
+footer #redes i {
+    margin : 10px;
+    transition: color 0.1s ease-out;
+}
+
+footer #redes i.fa-facebook:hover {
+    color: #3b5998;
+}
+
+footer #redes i.fa-twitter:hover {
+    color: #00aced;
+}
+
+footer #redes i.fa-youtube:hover {
+    color: #FF0000;
+}
+
+footer #redes i.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    #hamburger_menu {
+        width: 30px;
+        display: initial;
+    }
+
+    #hamburger_login {
+        display: block;
+        width: 30px;
+    }
+    #hamburger_items {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+/* CSS Index */
+main#index{  
+    margin: 0;
+    background-image: url("../images/fondo2.jpg");
+    background-size: cover;
+}
+
+main#index .container-fluid {
+    background: rgba(0, 0, 0, 0.466);
+}
+main#index h1{
+    color: goldenrod;
+    font-family: 'Bebas Neue', 'Helvetica';
+    font-size: 3rem;
+    padding-left: 5px;
+    text-align: center;
+    padding-top: 30px;
+}
+main#index h2{
+    color: goldenrod;
+    font-family: 'Bebas Neue', 'Helvetica';
+    font-size: 2rem;
+}
+main#index .home p{
+    color: whitesmoke;
+    font-size: 1rem;
+    padding-left: 5px; 
+    border-left: 1px solid goldenrod;
+}
+main#index hr{
+    width: 100px;
+}
+main#index .box1{
+    width: 50%;
+    height: 550px;
+    margin-left: -15px;
+}
+main#index .home{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+main#index .box2{
+    width: 50%;
+    text-align: center;
+    height: 550px;
+
+}
+main#index form{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+main#index label{
+    color: goldenrod;
+    font-family: 'Bebas Neue', 'Helvetica';
+    font-size: 2rem;
+}
+main#index input{
+    border-radius: 5px;
+    box-shadow: goldenrod;
+}
+main#index .campo{
+    padding: 10px;
+}
+
+/* Página de login */
+
+main#login{
+    background-image: url(../images/leon3.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main#login .row{
+    margin: 0;
+}
+
+main#login .Formulario{
+    color: rgb(0, 0, 0);
+    border-bottom: 5px gold;
+    background: rgba(255, 251, 251, 0.671);
+    border-radius: 30px;
+    margin: 100px 0;
+    padding: 10px 0;
+}
+main#login .Formulario img{
+    height: 50px;
+    width: 50px;
+    text-shadow: 2px 2px 4px #000000;
+}
+  
+main#login #form {
+    max-width: 700px;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+main#login .form-field {
+    display: flex;
+    margin: 0 0 1rem 0;
+    
+  }
+main#login label, input {
+    width: 70%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    
+  }
+main#login label {
+    text-align: right;
+    width: 30%;
+    
+  }
+main#login input {
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid goldenrod;
+    background: rgba(235, 201, 157, 0.801);
+    
+  }
+  
+main#login .boton{
+    background-color: goldenrod; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.boton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* CSS de listado de eventos y museos */
+/* titles for museums and events */
+main#listado {
+    padding: 20px;
+}
+
+main#listado .catalog {
+    font-family: 'Bebas Neue', 'Helvetica';
+}
+
+/* thumps up and down section */
+main#listado .rating {
+    width: inherit;
+    height: 55px;
+    margin: 0;
+    justify-content: center;
+}
+main#listado .rating i{
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-top: 0;
+    color: rgb(21, 177, 117);
+}
+
+/* flip card effect below */
+main#listado .flip-card {
+    background-color: transparent;
+    height: 400px;
+    perspective: 1000px;
+    margin: 1rem;
+    border-radius: 5px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+main#listado .flip-card img {
+    width: inherit;
+    height: 14rem;
+    border-radius: inherit;
+}
+main#listado .flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Rotation while hovering */
+main#listado .flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+/* hidding the other card */
+main#listado .flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+border-radius: 5px;
+}
+
+/* Front card characteristics */
+main#listado .flip-card-front {
+background-color: rgb(255, 255, 255);
+color: rgb(66, 66, 66);
+}
+main#listado .flip-card-front h4{
+font-size: large;
+}
+
+main#listado .flip-card-front p{
+font-size: small;
+color: rgb(94, 94, 94);
+}
+
+/* Back card characteristics */
+main#listado .flip-card-back {
+background-color: #181818;
+color: white;
+transform: rotateY(180deg);
+font-size: 85%;
+}
+main#listado .flip-card-back h4 {
+color: goldenrod;
+}
+main#listado .flip-card-back h4, p{
+margin: 2px;
+padding: 2px;
+}
+main#listado .flip-card-back .button {
+height: 0.5rem;
+padding: 0.5em;
+letter-spacing: 0.1em;
+background-color: goldenrod;
+border: none;
+border-radius: 4px;
+transition: all 0.2s cubic-bezier(.4,0,.2,1);
+text-decoration: none;
+color: black;
+}
+main#listado .flip-card-back .button:hover {
+letter-spacing: 0.2em;
+background-color: rgb(17, 17, 17);
+color: rgb(226, 226, 226);
+}
+  
